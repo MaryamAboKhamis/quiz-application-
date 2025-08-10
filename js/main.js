@@ -169,7 +169,7 @@ select.addEventListener('click',(e)=>{
         fetchFun()
 })
 function fetchFun(){
-    fetch('').then((result)=> result.json())
+    fetch(field[link]).then((result)=> result.json())
     .then((result)=>{
         setValues(result)
     })
