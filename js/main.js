@@ -263,7 +263,7 @@ function showResult(count,pass){
         count.appendChild(div)
         skip.innerHTML='See your Answer'
         skip.classList.remove('green');
-    },1000)
+    },10000)
 
 }
 function matchSolotion(studentAnswer,correctAnswer){
@@ -308,7 +308,7 @@ function getResult(message){
     },1000)
     setTimeout(()=>{
         clearInterval(t)
-    },1000)
+    },10000)
     indexes=proccesAnswers()
     solotion=getSolotion()
     let pass=matchSolotion(proccesAnswers(),getSolotion())
