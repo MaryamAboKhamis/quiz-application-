@@ -23,11 +23,11 @@ let normalMessge= `
         <span></span>
         `      
 let field={
-    'javascript':"/json/java_script.json",
-    'data-analysis':"/json/data_analysis.json",
-    'culture':"/json/culture_public.json",
-    'math':"/json/math_questions.json",
-    'psychology':"/json/psychology_question.json",
+    'javascript':"https://maryamabokhamis.github.io/quiz-application-/json/java_script.json",
+    'data-analysis':"https://maryamabokhamis.github.io/quiz-application-/json/data_analysis.json",
+    'culture':"https://maryamabokhamis.github.io/quiz-application-/json/culture_public.json",
+    'math':"https://maryamabokhamis.github.io/quiz-application-/json/math_questions.json",
+    'psychology':"https://maryamabokhamis.github.io/quiz-application-/json/psychology_question.json",
 }
 let progSet=setInterval(()=>{
     prog.style.width=(100*follow)/allQ+'%';
@@ -60,8 +60,8 @@ function timeFun(){
     let sec=numberTime%60
     time.innerHTML=''
     timeSet=setInterval(()=>{  
-    minutes=minutes<10&&Array.from(minutes.toString()).length<2?minutes+'0':minutes
-    sec=sec<10&&Array.from(sec.toString()).length<2?sec+'0':sec
+    minutes=minutes<10&&Array.from(minutes.toString()).length<2?'0'+minutes:minutes
+    sec=sec<10&&Array.from(sec.toString()).length<2?'0'+sec:sec
     time.innerHTML=minutes+":"+sec
     sec--;
     if(sec<0){
